@@ -1,22 +1,26 @@
 .container{
     margin-left: 40px;
-}
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+   }
 
 .container h1{
-    font-weight: 100;
+    font-weight: 400;
     margin-top: 10vh;
     margin-bottom: 45px;
 }
 
 .productContainer{
     display: flex;
+    max-width: 100%;
     flex-flow: row wrap;
     align-items: center;
 }
 
 .productCard{
     width: 180px;
-    height: 310px;
+    height: 290px;
     padding: 10px;
     position: relative;
     background-color: #B7C0C6;
@@ -26,6 +30,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 20px;
+    border-radius: 10px;
 }
 
 .productCard button{
@@ -34,6 +40,7 @@
 
 .productCard h3{
     font-weight: 100;
+    font-size: 1em;
 }
 
 .imgContainer{
@@ -45,8 +52,68 @@
     height: 150px;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    box-sizing: border-box;
+    padding: 5px;
 }
 
 .productCard img{
     max-height: 100%;
 }
+
+@media (max-width: 768px){
+    .container{
+    
+        max-height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+       }
+
+       .container h1{
+        font-weight: 100;
+        margin-bottom: 45px;
+        text-align: center;
+    }
+
+    .productCard{
+        width: 280px;
+        height: 300px;
+        padding: 10px;
+        position: relative;
+        background-color: #B7C0C6;
+        overflow: hidden;
+        margin: 0 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        border-radius: 10px;
+    }
+
+    .productCard img{
+        max-height: 100%;
+        max-width: 100%;
+    }
+
+    .productCard > div {
+        display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .productCard > div > button {
+        width: 100%;
+    }
+
+    .container h1{
+        font-weight: 600;
+        margin-bottom: 45px;
+        text-align: center;
+    }
+
+    .productCard h3{
+        font-weight: 400;
+        font-size: 1em;
+    }
+} 

@@ -2,7 +2,7 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 import Admin from './components/Admin';
-import Background from './components/Background';
+// import Background from './components/Background';
 import Browse from './components/Browse';
 import Cart from './components/Cart';
 import Home from './components/Home';
@@ -16,7 +16,7 @@ function App() {
 
       <Router>
         <Navbar />
-        <Background />
+        {/* <Background /> */}
         <Switch>
           <Route exact path="/admin" component={Admin}/>
           <Route exact path="/cart" component={Cart}/>

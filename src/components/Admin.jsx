@@ -54,8 +54,8 @@ export default function Admin() {
                     products.map(product=>(
                         <div className="productListing">
                             <img src={product.img} alt="" />
-                            <h3>{product.name}</h3>
-                            <button onClick={()=>handleDeleteProduct(product.productId)} style={{marginTop: 0, background: '#E33A8B', height: '100%'}}>delete</button>
+                            < h3 style={{display:'flex',flex:0.6, left:0}}>{product.name}</h3>
+                            <button onClick={()=>handleDeleteProduct(product.productId)} style={{marginTop: 0, background: '#E33A8B', height: '80%', display:'flex', alignItems:"center"}}>delete</button>
                         </div>
                     ))
                 }

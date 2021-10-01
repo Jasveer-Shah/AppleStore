@@ -37,3 +37,12 @@ a:hover{
     font-size: small;
     text-align: center;
 }
+
+@media (max-width:768px){
+    .nav{
+        width: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+}

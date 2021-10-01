@@ -1,3 +1,8 @@
+.main {
+  width:100%;
+  height: 100%;
+ display: flex;
+}
 .main img{
     position: absolute;
     box-sizing: border-box;
@@ -11,12 +16,47 @@
 
 .iphone_intro{
   position: absolute;
-  margin-top: 30vh;
+  margin-top: 35vh;
   margin-left: 40px;
   width: 65vw;
   font-size: 1.5em;
+  height: 80vh;
 }
 
 .iphone_intro h1, .iphone_intro h2{
   font-weight: 100;
+  font-size: 1.5em;
+  width: 50vw;
+  top: 10vh;
+}
+
+
+@media (max-width: 768px){
+  .iphone_intro{
+    position: absolute;
+ 
+    margin-top: 10vh;
+    margin-left: 40px;
+    width: 70vw;
+    font-size: 1.5em;
+  }
+
+  .iphone_intro h1, .iphone_intro h2{
+    font-weight: 100;
+    font-size: 0.8em;
+    width: 40vw;
+    top: 12vh;
+  }
+
+  .main img{
+    position: absolute;
+    box-sizing: border-box;
+    margin-top: 6vh;
+    width: calc(100% - 6vw);
+    max-width: 1400px;
+
+    max-height: 80vh;
+    z-index: -1;
+    right: 15vw;
+}
 }

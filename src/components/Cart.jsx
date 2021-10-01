@@ -23,9 +23,9 @@ export default function Cart() {
                             <div className="imgContainer">
                                 <img src={product.img} alt="" />
                             </div>
-                            <div>
+                            <div style={{display:'flex',flexDirection:'column'}}>
                                 <h3>{product.name}</h3>
-                                <button onClick={()=>removeFromCartHandler(product.cartId)}>Remove</button>
+                                <button onClick={()=>removeFromCartHandler(product.cartId)} style={{display:'flex'}}>Remove</button>
                             </div>
                         </div>
                     ))
